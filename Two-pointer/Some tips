@@ -1,0 +1,5 @@
+1. When the array is sorted, it is likely that a person should use two pointers.  
+
+   Because two pointers requires a sorted array, and pointer is from the start or/and the end element. 
+   
+2. 
