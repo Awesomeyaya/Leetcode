@@ -1,0 +1,16 @@
+The problems in this file is solved in the following way:
+
+1. The reverse of the original problem: 
+   move zeros : to collect nums which are not zero
+   remove duplicates: to collect num which is different with the previous one 
+   remove a target element: to collect the nums which are not the target 
+   
+2. Methods:
+   create a variable Zero = 0,
+   then use a for loop to go over each element in the array,
+   if the array[i] is not the target, Zero = Zero + 1
+   return Zero( length of the new length of the array, elements in the array stasity the requirements )
+   
+3. Benefits: 
+   modify the array in place with extra O(1) memory place. 
+   
