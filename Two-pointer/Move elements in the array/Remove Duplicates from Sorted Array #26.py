@@ -1,7 +1,7 @@
 def removeDuplicates(self, nums):
         """
         :type nums: List[int]
-        :rtype: int
+        :rtype: int , the length of the returned array
         """
         
         if not nums:
