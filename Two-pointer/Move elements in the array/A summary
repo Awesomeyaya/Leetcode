@@ -11,8 +11,21 @@ The problems in this file is solved in the following way:
    if the array[i] is not the target, Zero = Zero + 1
    return Zero( length of the new length of the array, elements in the array stasity the requirements )
    
+   i.e. 
+   pointer = 0
+   index of the return array
+   when the condition is satisfied, pointer + = pointer 
+   pointer + 1 == length of the returned array 
+   
+   condition:
+   when nums[n] != the target value, which means create a new array. -- nums[pointer] = nums[n] 
+
 3. Benefits: 
-   modify the array in place with extra O(1) memory place. 
+   modify the array in place O(n)with extra O(1) memory place. 
    
 Tips : to remove duplicate elements, one needs to use set, which takes O(n) space. 
+
+       if the last element matters, use range from 1 to len(nums)
+       
+       REMEMBER to judge whether the array is empty. i.e. if not nums: return0 
    
