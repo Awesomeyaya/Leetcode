@@ -14,3 +14,5 @@ The problems in this file is solved in the following way:
 3. Benefits: 
    modify the array in place with extra O(1) memory place. 
    
+Tips : to remove duplicate elements, one needs to use set, which takes O(n) space. 
+   
