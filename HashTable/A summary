@@ -1,0 +1,6 @@
+1. In jewels and stones, one can use a set to store the jewels, which takes O(n) space.
+
+An important idea is that, one can make the Jewels a fixed-size array, which takes O(1)space. 
+For example, the Jewels can only be upper/lower case letters, so one can use the ASCII table as Jewels. 
+
+Then go over the stones array, if stones[i] in Jewels, it is done.
