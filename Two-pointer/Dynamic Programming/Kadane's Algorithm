@@ -1,0 +1,4 @@
+The basic principle of Kadane's Algorithm is to use a array which stores the culmulative sum of the difference between the
+nums[i] and nums[i-1].
+
+And then compare the values at different index, choose the max one and return it.
