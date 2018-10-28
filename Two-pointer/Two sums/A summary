@@ -12,3 +12,5 @@ As the array is sorted, it indicates that one should new two pointers. One is th
 The solution is to approximate the target from the two ends of the array. If nums[start] + nums[end] < target, it indicates
 that the start should move forward so that start = start + 1. At last, return the index of a and b.
 
+It is a bit like binary search. 
+
