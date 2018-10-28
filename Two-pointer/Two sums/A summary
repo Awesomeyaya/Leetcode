@@ -1,0 +1,14 @@
+1. The simple two sum uses a hash table, the key is the nums in the array and the value is index of nums.
+
+For a problem like a+b = target, one needs to convert it to b = target - a 
+
+So one has to go over the array in a for loop, for each nums[i], finds whether target - nums[i] is in the hashmap.If it exists, 
+return the index of nums[i] and target - nums[i].  If not, stores nums[i] in the hashtable. 
+
+2. Two sums in a sorted array. 
+
+As the array is sorted, it indicates that one should new two pointers. One is the start and the other is the end. 
+
+The solution is to approximate the target from the two ends of the array. If nums[start] + nums[end] < target, it indicates
+that the start should move forward so that start = start + 1. At last, return the index of a and b.
+
