@@ -1,0 +1,22 @@
+In this problem, the return type is a list. So one cannot return each value when it is computed in the for loop.
+Use the templet the solution gave.
+
+
+Solution 1 : Naive Approach
+
+create an empty list and append the value of each step to it.
+
+Time Complexity: O(n)
+Space Complexity :O(1)
+
+Solution 2: String Concatenation
+
+Algorithm: check the divisibility by given numbers i.e. i % 3 == 0. And then concate the new string.
+
+Time Complexity: O(n)
+Space Complextity: O(1)
+
+Solution 3: Hash Table 
+
+Algorithm: 
+
