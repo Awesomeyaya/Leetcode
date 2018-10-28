@@ -1,0 +1,30 @@
+1.  Usage:
+    move the whole array to left/right by several units 
+    or reverse the whole array.
+
+2.  Benefits: 
+    In-place
+    O(n) space
+    
+3.  How to rotation:
+(1)Suppose the array nums[] has length n.  And we want to move it to right by k units 
+   end = index of the last element = n - 1 
+   step 1: rotate the first n-k elements.i.e. nums[0] ~ nums[end-k]
+   step 2: rotate the last k elements.i.e. nums[end-k+1] ~ nums[end]
+   step 3: reverse the whole array i.e. nums[0] ~ nums[end ]
+   Each step will call the swap function.
+   
+(2) swap function: exchange the first element with the last element
+    def swap (self, nums, start, end) 
+    the first element == the start index of each step 
+    the last element == the end index of each step
+    While Loop
+       while start < end:
+            nums[start], nums[end] = nums[end], nums[start]
+            start, end = start + 1, end - 1
+            
+    Swap in place uses two pointers.
+
+Tips: 
+   k = k % len(nums)  avoid the period of k 
+   if k <= 0 , return 
