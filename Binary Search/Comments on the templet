@@ -1,0 +1,6 @@
+1. Two pointers are used in this problem. One needs to use the start and end index, also creates a mid = (start+end)/2
+   mid = int(mid), which means to take the floor int of mid. 
+   
+   In this way, the start and end will never be at the same point. So it avoids some problem. 
+   
+   If the target is not found, return -1.
