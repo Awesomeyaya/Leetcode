@@ -1,5 +1,7 @@
 1. The simple two sum uses a hash table, the key is the nums in the array and the value is index of nums.
 
+   The hush table is implemented by dictionary.
+
 For a problem like a+b = target, one needs to convert it to b = target - a 
 
 So one has to go over the array in a for loop, for each nums[i], finds whether target - nums[i] is in the hashmap.If it exists, 
