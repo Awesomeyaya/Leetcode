@@ -1,0 +1,2 @@
+In this problem, the return type is a list. So one cannot return each value when it is computed in the for loop.
+Use the templet the solution gave.
