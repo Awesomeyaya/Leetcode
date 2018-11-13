@@ -8,3 +8,7 @@ Step 2: deal with characters block by block, each block of length 2k
         The ending pointer "j" of the block is chosen from (i + k -1) and (len(s) - 1) 
         
 Step 3: Use a swap function to swap numbers between i and j 
+
+Another ways to reverse string: 
+1. Use the reversed(string) method. 
+
