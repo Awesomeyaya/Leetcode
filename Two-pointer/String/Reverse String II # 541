@@ -1,0 +1,10 @@
+Given a string, and a number k, for every 2k characters, reverse the first k characters. If the number of the remaining
+characters is less than k, then reverse them all. 
+
+Step 1: transfer the string to a list 
+
+Step 2: deal with characters block by block, each block of length 2k 
+        The beginning pointer "i" of the block is increased by 2*k 
+        The ending pointer "j" of the block is chosen from (i + k -1) and (len(s) - 1) 
+        
+Step 3: Use a swap function to swap numbers between i and j 
