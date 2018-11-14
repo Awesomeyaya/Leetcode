@@ -1,0 +1,2 @@
+1. str.split([char]) 按照char拆开str，拆开后是一个list
+2. str.strip([char]) 去掉开头和结尾的char
