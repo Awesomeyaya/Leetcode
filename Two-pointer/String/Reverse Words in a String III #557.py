@@ -1,9 +1,13 @@
+'''
+
 Tips: 
 1. split the sentence in the right way 
 2. transfer each word(string) to list 
 For each word, use the reverse function 
 3. remember to add space after each word
 4. delete the extra space at the end 
+
+'''
 
 class Solution:
     def reverseWords(self, s):
