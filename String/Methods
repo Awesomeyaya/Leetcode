@@ -1,3 +1,4 @@
 1. str.split([char]) 按照char拆开str，拆开后是一个list
 2. str.strip([char]) 去掉开头和结尾的char
 3. reversed(str) 把一个string倒序(swap function)
+4. str.isalnum() 返回值：如果string至少有一个字符并且字符都是字母或者数字：True 
