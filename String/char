@@ -1,0 +1,10 @@
+1. chr () 求一个ASCII码对应的字符
+2. ord () 求一个字符的ASCII码
+
+Convert from upper case to lower case: 
+
+ord('X') + ord('a') - ord('A') 
+
+Convert from lower case to upper case:
+
+ord('x') + ord('A') - ord('a') 
