@@ -1,0 +1,3 @@
+import re
+
+1. 去掉某个不想要的字符的类型： re.sub('\s',",string) 去掉string中的字符
