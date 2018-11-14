@@ -2,8 +2,11 @@
 Based on the requirements, one should only focus on the letters and numbers and ignore cases. 
 So one can use str.isalnum() from both end to get the desired char of string.
 
+Two pointers: 
+One is at the beginning, the other one is at the end. 
+
 Tips:  In the while loop, check the False case first, then continue with the regular path.  
-       And do not use the else
+       And do not use the else. 
 '''
 def isPalindrome(self, s):
     l, r = 0, len(s)-1
