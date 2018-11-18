@@ -24,11 +24,13 @@ $: 匹配字符串末端
 
 1. 去掉某个不想要的字符的类型： re.sub('\s',",string) 去掉string中的字符
 
-2. 找某个字符串：re.search(r'...', s) ,返回search到的字符串的position区间和匹配到的字符串
+2. 替换字符串中某种字符: re.sub(r'...要替换掉的字符', '...用来替换的字符', string)，返回值是替换好的字符串.
+
+3. 找某个字符串：re.search(r'...', s) ,返回search到的字符串的position区间和匹配到的字符串
    如果只想要返回的字符串，i.e.
    match = re.search(r'...', s)
    print(match.group())
 
-3. 找某个字符串: re.match：从字符串的起始位置找。
+4. 找某个字符串: re.match：从字符串的起始位置找。
 
 
