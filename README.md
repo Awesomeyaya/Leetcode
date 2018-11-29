@@ -1,2 +1,2 @@
 # Leetcode
-## Recording the ways before I can get a job
+## Recording the days before I can get a job
