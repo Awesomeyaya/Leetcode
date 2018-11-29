@@ -3,6 +3,8 @@ Tips:1. We don't have to count the lengths of the linked-list. We just need to s
         In the while loop, we need to set the [if l1] and [ if l2] to select that whether the linked-list is vaild or None. 
         
      2. We use dummy and set it as the node before the first node. 
+        dummy = cur = ListNode(0) : It is a standard expression for defining two pointers in a linked list.
+        cur will change from cur.next. And the returned value is dummy.next.
      
      3. In the while loop, the cur.next is the number of the first node. Then cur points to cur.next. In this way, the numbers 
         calculated can be set to a new linked-list.
