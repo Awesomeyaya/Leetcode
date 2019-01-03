@@ -1,0 +1,5 @@
+**list,set,dictionary ：unhashable**
+``int, float, tuple, str ：hashable``
+
+
+
