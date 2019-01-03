@@ -1,0 +1,15 @@
+1. None 对应 False ; not None = Ture = 1
+ex. 1 + True >> 2 
+
+在Python中，None、空列表[]、空字典{}、空元组()、0等一系列代表空和无的对象会被转换成False。除此之外的其它对象都会被转化成True。
+
+2. Python中对变量是否为None的判断
+三种主要的写法有：
+
+第一种：if X is None;
+
+第二种：if not X；
+
+当X为None,  False, 空字符串"", 0, 空列表[], 空字典{}, 空元组()这些时，not X为真，即无法分辨出他们之间的不同。
+
+第三种：if not X is None
