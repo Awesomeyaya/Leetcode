@@ -1,5 +1,5 @@
-list,set,dictionary ：unhashable_
-int, float, tuple, str ：hashable_
+# list,set,dictionary ：unhashable
+# int, float, tuple, str ：hashable
 
 
 
