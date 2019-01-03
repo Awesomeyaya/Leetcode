@@ -1,5 +1,16 @@
-# list,set,dictionary ：unhashable
-# int, float, tuple, str ：hashable
+1. list,set,dictionary ：unhashable
 
+list 不通过hash值进行索引，它存储的元素不需要hashable。list of list [[]]中的每个
+set,dictionary 通过hash值索引，存储的元素是hashable（不可变的)
+dictonary的key是hashable的，value不一定要hashable.
 
+>>> set([[], [], []])
+TypeError: unhashable type: 'list'
+>>> set([{}, {}, {}])
+TypeError: unhashable type: 'dict'
+>>> set([set(), set(), set()])
+TypeError: unhashable type: 'set'
 
+如果想在set中存list，可以先把list变成tuple, tuple(list)是可以存进set的。
+
+2. int, float, tuple, str ：hashable
