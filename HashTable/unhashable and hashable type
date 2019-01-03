@@ -1,6 +1,5 @@
-**list,set,dictionary ：unhashable**
-``int, float, tuple, str ：hashable``
-**粗体1**
+list,set,dictionary ：unhashable_
+int, float, tuple, str ：hashable_
 
 
 
