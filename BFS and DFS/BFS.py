@@ -31,6 +31,21 @@ while not q.empty():
         dist += 1
 return -1
 
-
+3.Find the number of islands:
+def bfs(i,j,A):
+    q = Queue()
+    q.put((i,j))
+    grid[i][j] = 0
+    while not q.empty():
+        size = q.qsize()
+        for i in range(size):
+            r,l = q.get()
+            adjacent = (r-1,l),(r+1,l),(r,l-1),(r,l+1),
+            for x, y in adjacent:
+                if x < 0 or y < 0 or x == m or y == n or A[x][y] == 0:
+                    continue
+                A[x][y] = 0
+                q.put((x,y))
+    
         
     
