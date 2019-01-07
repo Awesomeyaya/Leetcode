@@ -1,7 +1,7 @@
 Given a 2d array A with 0s and 1s, 0 means sea and 1 means island. 
 DFS can be used to find the island(area,perimeter,position).
 
-1. Find island 
+1. Find number of islands 
 def DFS(i,j,A):
     if i < 0 or j < 0 or i == m or j == n or A[i][j] != 1:
         return None
