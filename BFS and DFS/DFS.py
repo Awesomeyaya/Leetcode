@@ -26,3 +26,16 @@ def DFS(i,j,A,visited,q):
     DFS(i+1,j,A,visited,q)
     DFS(i,j-1,A,visited,q)
     DFS(i,j+1,A,visited,q)
+
+3. Find Perimeter 
+def sum(i,j):
+    if i < 0 or j < 0 or i == m or j == n or A[i][j] == 0:
+        return 1
+    if A[i][j] == -1:
+        return 0 
+    A[i][j] = -1 
+    left = sum(i-1,j,A)
+    right = sum(i+1,j,A)
+    up = sum(i,j-1,A)
+    down = sum(i,j+1,A)
+    return left + right + up + down 
