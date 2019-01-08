@@ -1,0 +1,16 @@
+1. T(n) = T(n/2) + O(n) :  Time complexityO(n) 
+T(n/2) = T(n/4) + O(n/2 + n )
+T(n/4) = T(n/8) + O(n/4 + n/2 + n)
+... 
+T(1) = T(1) + O(n + n/2 + n/4 +...+1) 
+
+O(n + n/2 + n/4 +...+1) = O(1+2+4+8+...+n) =  O(2n) ~ O(n)
+
+常见的时间复杂度：
+O(logn): 二分法
+O(nlogn):排序
+O(n^2),O(n^3):array,enymerate,dynamic programming,
+O(2^n):组合
+O(n!):排列
+O(√n):分解质因数
+
