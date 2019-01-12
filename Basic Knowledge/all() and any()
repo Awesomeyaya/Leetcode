@@ -1,0 +1,8 @@
+all() : If all ture, return True; if one False, return False; if iterable is empty, return true.
+any() : If one ture, return Ture, if all False, return False; if iterable is empty, return false. 
+
+ex. children = [root.right,root.left]
+    if not any(children):
+        return 1 
+        
+Here, if children has one or two elements, any(children) is true. If children has no element, any(children) is False.
