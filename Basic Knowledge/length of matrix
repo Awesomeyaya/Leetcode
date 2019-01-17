@@ -1,4 +1,4 @@
 matrix == [[]] -->> Length is 1 
 matrix == []   -->> Length is 0 
-
+not matrix is different from the above example.
 So len(matrix) == 0 is not sufficient to restraint that a matrix is empty
