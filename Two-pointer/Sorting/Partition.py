@@ -37,25 +37,24 @@ class Solution:
         # write your code here
         if not nums or n < 1 or n > len(nums):
             return 0 
-        length = len(nums)-1
-        return self.partition(nums,0,length,len(nums)-n)
+        return self.partition(nums,0,len(nums)-1,len(nums)-n)
         
-        
-    def partition(self,nums,start,end,k):
+    def partition(self,nums,start,end,n):
         if start == end:
-            return nums[k]
+            return nums[n]
         mid = (start+end)//2
         left, right, pivot = start, end, nums[mid]
-        while left <= right and nums[left] < pivot:
-            left += 1 
-        while left <= right and nums[right] > pivot:
-            right -= 1 
-        if left <= right:
-            nums[left],nums[right] = nums[right],nums[left]
-            left, right = left+1, right-1
-        if k <= right:
-            return self.partition(nums,start,right,k)
-        if k >= left:
-            return self.partition(nums,left,end,k)
+        while left<= right:
+            while left <= right and nums[left] < pivot:
+                left += 1 
+            while left <= right and nums[right] > pivot:
+                right -= 1 
+            if left <= right:
+                nums[left],nums[right] = nums[right],nums[left]
+                left, right = left+1, right-1
+        if n <= right:
+            return self.partition(nums,start,right,n)
+        if n >= left:
+            return self.partition(nums,left,end,n)
             
-        return nums[k]
+        return nums[n]
