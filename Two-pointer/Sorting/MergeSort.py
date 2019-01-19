@@ -1,7 +1,8 @@
 '''
 1. 用递归去解决mergesort，每次把数组对半分
 2. 先mergesort再merge
-3. merge: 用leftstart和rightstart分别指向左边数组和右边数组的起始位置。然后把比较小的放进result数组里。result数组的position由index控制。
+3. merge: 用leftstart和rightstart分别指向左边数组和右边数组的起始位置。然后把比较小的放进result数组里。result数组的position由index控制。art
+   每次都需要改变index和 （leftstart与rightstart）中的一个
 '''
 class Solution:
     """
